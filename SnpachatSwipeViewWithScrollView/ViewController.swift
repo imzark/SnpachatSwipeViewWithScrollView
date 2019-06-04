@@ -39,15 +39,6 @@ class ViewController: UIViewController {
         left.view.backgroundColor = #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1)
         left.view.setViewTopRaidus(radius: 12)
         left.view.setViewShadow()
-        // try add tabel view in the left
-        let leftTableVC = UITableViewController()
-        left.addChild(leftTableVC)
-        leftTableVC.view.frame = CGRect(x: 100, y: 100,
-                                        width: left.view.frame.width - 200,
-                                        height: 400)
-        leftTableVC.view.clipsToBounds = true
-        left.view.addSubview(leftTableVC.view)
-        leftTableVC.didMove(toParent: left)
         
         let mid = UIViewController()
         mid.view.isHidden = true

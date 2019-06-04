@@ -8,4 +8,4 @@ I used UIPageViewContrller. It is much simpler But it cannot eliminate the side 
 
 It is a practice. Take it as need. Swift 5 required.
 
-![](snapchatlikeswipe.gif)
+![](snapchatLikeSwipe.gif)
