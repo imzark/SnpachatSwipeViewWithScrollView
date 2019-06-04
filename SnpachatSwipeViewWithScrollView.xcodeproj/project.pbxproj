@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5875BB7622A5822000EBC352 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5875BB7522A5822000EBC352 /* AppDelegate.swift */; };
+		5875BB7822A5822000EBC352 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5875BB7722A5822000EBC352 /* ViewController.swift */; };
+		5875BB7B22A5822000EBC352 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5875BB7922A5822000EBC352 /* Main.storyboard */; };
+		5875BB7D22A5822100EBC352 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5875BB7C22A5822100EBC352 /* Assets.xcassets */; };
+		5875BB8022A5822100EBC352 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5875BB7E22A5822100EBC352 /* LaunchScreen.storyboard */; };
+		5875BB8B22A5822200EBC352 /* SnpachatSwipeViewWithScrollViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5875BB8A22A5822200EBC352 /* SnpachatSwipeViewWithScrollViewTests.swift */; };
+		5875BB9622A5822200EBC352 /* SnpachatSwipeViewWithScrollViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5875BB9522A5822200EBC352 /* SnpachatSwipeViewWithScrollViewUITests.swift */; };
+		5875BBA422A58ABB00EBC352 /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5875BBA322A58ABB00EBC352 /* SwipeViewController.swift */; };
+		5875BBA822A640C400EBC352 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5875BBA722A640C400EBC352 /* UIView+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5875BB8722A5822200EBC352 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5875BB6A22A5822000EBC352 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5875BB7122A5822000EBC352;
+			remoteInfo = SnpachatSwipeViewWithScrollView;
+		};
+		5875BB9222A5822200EBC352 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5875BB6A22A5822000EBC352 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5875BB7122A5822000EBC352;
+			remoteInfo = SnpachatSwipeViewWithScrollView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5875BB7222A5822000EBC352 /* SnpachatSwipeViewWithScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnpachatSwipeViewWithScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5875BB7522A5822000EBC352 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5875BB7722A5822000EBC352 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5875BB7A22A5822000EBC352 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5875BB7C22A5822100EBC352 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5875BB7F22A5822100EBC352 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5875BB8122A5822100EBC352 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5875BB8622A5822200EBC352 /* SnpachatSwipeViewWithScrollViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnpachatSwipeViewWithScrollViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5875BB8A22A5822200EBC352 /* SnpachatSwipeViewWithScrollViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnpachatSwipeViewWithScrollViewTests.swift; sourceTree = "<group>"; };
+		5875BB8C22A5822200EBC352 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5875BB9122A5822200EBC352 /* SnpachatSwipeViewWithScrollViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnpachatSwipeViewWithScrollViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5875BB9522A5822200EBC352 /* SnpachatSwipeViewWithScrollViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnpachatSwipeViewWithScrollViewUITests.swift; sourceTree = "<group>"; };
+		5875BB9722A5822200EBC352 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5875BBA322A58ABB00EBC352 /* SwipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
+		5875BBA722A640C400EBC352 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5875BB6F22A5822000EBC352 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5875BB8322A5822200EBC352 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5875BB8E22A5822200EBC352 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5875BB6922A5822000EBC352 = {
+			isa = PBXGroup;
+			children = (
+				5875BB7422A5822000EBC352 /* SnpachatSwipeViewWithScrollView */,
+				5875BB8922A5822200EBC352 /* SnpachatSwipeViewWithScrollViewTests */,
+				5875BB9422A5822200EBC352 /* SnpachatSwipeViewWithScrollViewUITests */,
+				5875BB7322A5822000EBC352 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5875BB7322A5822000EBC352 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5875BB7222A5822000EBC352 /* SnpachatSwipeViewWithScrollView.app */,
+				5875BB8622A5822200EBC352 /* SnpachatSwipeViewWithScrollViewTests.xctest */,
+				5875BB9122A5822200EBC352 /* SnpachatSwipeViewWithScrollViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5875BB7422A5822000EBC352 /* SnpachatSwipeViewWithScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				5875BBA922A651EB00EBC352 /* SupportingFIles */,
+				5875BB7722A5822000EBC352 /* ViewController.swift */,
+				5875BBA322A58ABB00EBC352 /* SwipeViewController.swift */,
+				5875BBA722A640C400EBC352 /* UIView+Extension.swift */,
+			);
+			path = SnpachatSwipeViewWithScrollView;
+			sourceTree = "<group>";
+		};
+		5875BB8922A5822200EBC352 /* SnpachatSwipeViewWithScrollViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				5875BB8A22A5822200EBC352 /* SnpachatSwipeViewWithScrollViewTests.swift */,
+				5875BB8C22A5822200EBC352 /* Info.plist */,
+			);
+			path = SnpachatSwipeViewWithScrollViewTests;
+			sourceTree = "<group>";
+		};
+		5875BB9422A5822200EBC352 /* SnpachatSwipeViewWithScrollViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5875BB9522A5822200EBC352 /* SnpachatSwipeViewWithScrollViewUITests.swift */,
+				5875BB9722A5822200EBC352 /* Info.plist */,
+			);
+			path = SnpachatSwipeViewWithScrollViewUITests;
+			sourceTree = "<group>";
+		};
+		5875BBA922A651EB00EBC352 /* SupportingFIles */ = {
+			isa = PBXGroup;
+			children = (
+				5875BB7922A5822000EBC352 /* Main.storyboard */,
+				5875BB7522A5822000EBC352 /* AppDelegate.swift */,
+				5875BB7C22A5822100EBC352 /* Assets.xcassets */,
+				5875BB7E22A5822100EBC352 /* LaunchScreen.storyboard */,
+				5875BB8122A5822100EBC352 /* Info.plist */,
+			);
+			path = SupportingFIles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5875BB7122A5822000EBC352 /* SnpachatSwipeViewWithScrollView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5875BB9A22A5822200EBC352 /* Build configuration list for PBXNativeTarget "SnpachatSwipeViewWithScrollView" */;
+			buildPhases = (
+				5875BB6E22A5822000EBC352 /* Sources */,
+				5875BB6F22A5822000EBC352 /* Frameworks */,
+				5875BB7022A5822000EBC352 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnpachatSwipeViewWithScrollView;
+			productName = SnpachatSwipeViewWithScrollView;
+			productReference = 5875BB7222A5822000EBC352 /* SnpachatSwipeViewWithScrollView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5875BB8522A5822200EBC352 /* SnpachatSwipeViewWithScrollViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5875BB9D22A5822200EBC352 /* Build configuration list for PBXNativeTarget "SnpachatSwipeViewWithScrollViewTests" */;
+			buildPhases = (
+				5875BB8222A5822200EBC352 /* Sources */,
+				5875BB8322A5822200EBC352 /* Frameworks */,
+				5875BB8422A5822200EBC352 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5875BB8822A5822200EBC352 /* PBXTargetDependency */,
+			);
+			name = SnpachatSwipeViewWithScrollViewTests;
+			productName = SnpachatSwipeViewWithScrollViewTests;
+			productReference = 5875BB8622A5822200EBC352 /* SnpachatSwipeViewWithScrollViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5875BB9022A5822200EBC352 /* SnpachatSwipeViewWithScrollViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5875BBA022A5822200EBC352 /* Build configuration list for PBXNativeTarget "SnpachatSwipeViewWithScrollViewUITests" */;
+			buildPhases = (
+				5875BB8D22A5822200EBC352 /* Sources */,
+				5875BB8E22A5822200EBC352 /* Frameworks */,
+				5875BB8F22A5822200EBC352 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5875BB9322A5822200EBC352 /* PBXTargetDependency */,
+			);
+			name = SnpachatSwipeViewWithScrollViewUITests;
+			productName = SnpachatSwipeViewWithScrollViewUITests;
+			productReference = 5875BB9122A5822200EBC352 /* SnpachatSwipeViewWithScrollViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5875BB6A22A5822000EBC352 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Zark;
+				TargetAttributes = {
+					5875BB7122A5822000EBC352 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					5875BB8522A5822200EBC352 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 5875BB7122A5822000EBC352;
+					};
+					5875BB9022A5822200EBC352 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 5875BB7122A5822000EBC352;
+					};
+				};
+			};
+			buildConfigurationList = 5875BB6D22A5822000EBC352 /* Build configuration list for PBXProject "SnpachatSwipeViewWithScrollView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5875BB6922A5822000EBC352;
+			productRefGroup = 5875BB7322A5822000EBC352 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5875BB7122A5822000EBC352 /* SnpachatSwipeViewWithScrollView */,
+				5875BB8522A5822200EBC352 /* SnpachatSwipeViewWithScrollViewTests */,
+				5875BB9022A5822200EBC352 /* SnpachatSwipeViewWithScrollViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5875BB7022A5822000EBC352 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5875BB8022A5822100EBC352 /* LaunchScreen.storyboard in Resources */,
+				5875BB7D22A5822100EBC352 /* Assets.xcassets in Resources */,
+				5875BB7B22A5822000EBC352 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5875BB8422A5822200EBC352 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5875BB8F22A5822200EBC352 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5875BB6E22A5822000EBC352 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5875BB7822A5822000EBC352 /* ViewController.swift in Sources */,
+				5875BB7622A5822000EBC352 /* AppDelegate.swift in Sources */,
+				5875BBA822A640C400EBC352 /* UIView+Extension.swift in Sources */,
+				5875BBA422A58ABB00EBC352 /* SwipeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5875BB8222A5822200EBC352 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5875BB8B22A5822200EBC352 /* SnpachatSwipeViewWithScrollViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5875BB8D22A5822200EBC352 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5875BB9622A5822200EBC352 /* SnpachatSwipeViewWithScrollViewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5875BB8822A5822200EBC352 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5875BB7122A5822000EBC352 /* SnpachatSwipeViewWithScrollView */;
+			targetProxy = 5875BB8722A5822200EBC352 /* PBXContainerItemProxy */;
+		};
+		5875BB9322A5822200EBC352 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5875BB7122A5822000EBC352 /* SnpachatSwipeViewWithScrollView */;
+			targetProxy = 5875BB9222A5822200EBC352 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5875BB7922A5822000EBC352 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5875BB7A22A5822000EBC352 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5875BB7E22A5822100EBC352 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5875BB7F22A5822100EBC352 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5875BB9822A5822200EBC352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5875BB9922A5822200EBC352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5875BB9B22A5822200EBC352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76X28RC49S;
+				INFOPLIST_FILE = SnpachatSwipeViewWithScrollView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.martin.demos.SnapchatSwipeView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5875BB9C22A5822200EBC352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76X28RC49S;
+				INFOPLIST_FILE = SnpachatSwipeViewWithScrollView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.martin.demos.SnapchatSwipeView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5875BB9E22A5822200EBC352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76X28RC49S;
+				INFOPLIST_FILE = SnpachatSwipeViewWithScrollViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.martin.SnpachatSwipeViewWithScrollViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SnpachatSwipeViewWithScrollView.app/SnpachatSwipeViewWithScrollView";
+			};
+			name = Debug;
+		};
+		5875BB9F22A5822200EBC352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76X28RC49S;
+				INFOPLIST_FILE = SnpachatSwipeViewWithScrollViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.martin.SnpachatSwipeViewWithScrollViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SnpachatSwipeViewWithScrollView.app/SnpachatSwipeViewWithScrollView";
+			};
+			name = Release;
+		};
+		5875BBA122A5822200EBC352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76X28RC49S;
+				INFOPLIST_FILE = SnpachatSwipeViewWithScrollViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.martin.SnpachatSwipeViewWithScrollViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SnpachatSwipeViewWithScrollView;
+			};
+			name = Debug;
+		};
+		5875BBA222A5822200EBC352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76X28RC49S;
+				INFOPLIST_FILE = SnpachatSwipeViewWithScrollViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.martin.SnpachatSwipeViewWithScrollViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SnpachatSwipeViewWithScrollView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5875BB6D22A5822000EBC352 /* Build configuration list for PBXProject "SnpachatSwipeViewWithScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5875BB9822A5822200EBC352 /* Debug */,
+				5875BB9922A5822200EBC352 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5875BB9A22A5822200EBC352 /* Build configuration list for PBXNativeTarget "SnpachatSwipeViewWithScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5875BB9B22A5822200EBC352 /* Debug */,
+				5875BB9C22A5822200EBC352 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5875BB9D22A5822200EBC352 /* Build configuration list for PBXNativeTarget "SnpachatSwipeViewWithScrollViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5875BB9E22A5822200EBC352 /* Debug */,
+				5875BB9F22A5822200EBC352 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5875BBA022A5822200EBC352 /* Build configuration list for PBXNativeTarget "SnpachatSwipeViewWithScrollViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5875BBA122A5822200EBC352 /* Debug */,
+				5875BBA222A5822200EBC352 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5875BB6A22A5822000EBC352 /* Project object */;
+}
