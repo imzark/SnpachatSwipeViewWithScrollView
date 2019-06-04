@@ -12,8 +12,6 @@
 		5875BB7B22A5822000EBC352 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5875BB7922A5822000EBC352 /* Main.storyboard */; };
 		5875BB7D22A5822100EBC352 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5875BB7C22A5822100EBC352 /* Assets.xcassets */; };
 		5875BB8022A5822100EBC352 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5875BB7E22A5822100EBC352 /* LaunchScreen.storyboard */; };
-		5875BB8B22A5822200EBC352 /* SnpachatSwipeViewWithScrollViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5875BB8A22A5822200EBC352 /* SnpachatSwipeViewWithScrollViewTests.swift */; };
-		5875BB9622A5822200EBC352 /* SnpachatSwipeViewWithScrollViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5875BB9522A5822200EBC352 /* SnpachatSwipeViewWithScrollViewUITests.swift */; };
 		5875BBA422A58ABB00EBC352 /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5875BBA322A58ABB00EBC352 /* SwipeViewController.swift */; };
 		5875BBA822A640C400EBC352 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5875BBA722A640C400EBC352 /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
@@ -44,11 +42,7 @@
 		5875BB7F22A5822100EBC352 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5875BB8122A5822100EBC352 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5875BB8622A5822200EBC352 /* SnpachatSwipeViewWithScrollViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnpachatSwipeViewWithScrollViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5875BB8A22A5822200EBC352 /* SnpachatSwipeViewWithScrollViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnpachatSwipeViewWithScrollViewTests.swift; sourceTree = "<group>"; };
-		5875BB8C22A5822200EBC352 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5875BB9122A5822200EBC352 /* SnpachatSwipeViewWithScrollViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnpachatSwipeViewWithScrollViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5875BB9522A5822200EBC352 /* SnpachatSwipeViewWithScrollViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnpachatSwipeViewWithScrollViewUITests.swift; sourceTree = "<group>"; };
-		5875BB9722A5822200EBC352 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5875BBA322A58ABB00EBC352 /* SwipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
 		5875BBA722A640C400EBC352 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,8 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				5875BB7422A5822000EBC352 /* SnpachatSwipeViewWithScrollView */,
-				5875BB8922A5822200EBC352 /* SnpachatSwipeViewWithScrollViewTests */,
-				5875BB9422A5822200EBC352 /* SnpachatSwipeViewWithScrollViewUITests */,
 				5875BB7322A5822000EBC352 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,42 +93,24 @@
 		5875BB7422A5822000EBC352 /* SnpachatSwipeViewWithScrollView */ = {
 			isa = PBXGroup;
 			children = (
-				5875BBA922A651EB00EBC352 /* SupportingFIles */,
+				5875BBA922A651EB00EBC352 /* SupportingFiles */,
 				5875BB7722A5822000EBC352 /* ViewController.swift */,
 				5875BBA322A58ABB00EBC352 /* SwipeViewController.swift */,
 				5875BBA722A640C400EBC352 /* UIView+Extension.swift */,
+				5875BB8122A5822100EBC352 /* Info.plist */,
 			);
 			path = SnpachatSwipeViewWithScrollView;
 			sourceTree = "<group>";
 		};
-		5875BB8922A5822200EBC352 /* SnpachatSwipeViewWithScrollViewTests */ = {
-			isa = PBXGroup;
-			children = (
-				5875BB8A22A5822200EBC352 /* SnpachatSwipeViewWithScrollViewTests.swift */,
-				5875BB8C22A5822200EBC352 /* Info.plist */,
-			);
-			path = SnpachatSwipeViewWithScrollViewTests;
-			sourceTree = "<group>";
-		};
-		5875BB9422A5822200EBC352 /* SnpachatSwipeViewWithScrollViewUITests */ = {
-			isa = PBXGroup;
-			children = (
-				5875BB9522A5822200EBC352 /* SnpachatSwipeViewWithScrollViewUITests.swift */,
-				5875BB9722A5822200EBC352 /* Info.plist */,
-			);
-			path = SnpachatSwipeViewWithScrollViewUITests;
-			sourceTree = "<group>";
-		};
-		5875BBA922A651EB00EBC352 /* SupportingFIles */ = {
+		5875BBA922A651EB00EBC352 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
 				5875BB7922A5822000EBC352 /* Main.storyboard */,
 				5875BB7522A5822000EBC352 /* AppDelegate.swift */,
 				5875BB7C22A5822100EBC352 /* Assets.xcassets */,
 				5875BB7E22A5822100EBC352 /* LaunchScreen.storyboard */,
-				5875BB8122A5822100EBC352 /* Info.plist */,
 			);
-			path = SupportingFIles;
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,7 +255,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5875BB8B22A5822200EBC352 /* SnpachatSwipeViewWithScrollViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +262,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5875BB9622A5822200EBC352 /* SnpachatSwipeViewWithScrollViewUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

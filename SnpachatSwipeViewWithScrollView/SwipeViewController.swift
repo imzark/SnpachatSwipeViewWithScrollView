@@ -20,8 +20,7 @@ protocol SwipeViewControllerDataSource {
 }
 
 class SwipeViewController: UIViewController {
-    
-    // protocol 不继承 class 时默认是值类型吗？这里不可以设置 weak
+    // protocol 不继承 class 时默认是值类型吗？Cannot set weak here
     var dataSource: SwipeViewControllerDataSource?
     var delegate: SwipeViewControllerDelegate?
     
@@ -36,7 +35,7 @@ class SwipeViewController: UIViewController {
         return swipeItemViewControllers.count
     }
     
-    // ScrollView
+    // scrollView
     private var scrollView: UIScrollView!
     private var currentOffsetX: CGFloat = 0
     
@@ -46,7 +45,7 @@ class SwipeViewController: UIViewController {
         setupScrollView()
     }
     
-    func setupScrollView() {
+    private func setupScrollView() {
         scrollView = UIScrollView()
         scrollView.isPagingEnabled = true
         scrollView.bounces = false
@@ -110,7 +109,7 @@ extension SwipeViewController: UIScrollViewDelegate {
         }
         
         if currentOffsetX > oldOffsetX {
-            // 从左往右
+            // heading right
             let fromPageIndex = Int(oldOffsetX / pageWidth)
             let toPageIndex = fromPageIndex + 1
             if fromPageIndex >= 0 && toPageIndex < swipeItemCount {
@@ -118,7 +117,7 @@ extension SwipeViewController: UIScrollViewDelegate {
             }
             
         } else if currentOffsetX < oldOffsetX {
-            // 从右往左
+            // heading left
             let toPageIndex = Int(currentOffsetX / pageWidth)
             let fromPageIndex = toPageIndex + 1
             
@@ -133,13 +132,13 @@ extension SwipeViewController: UIScrollViewDelegate {
         delegate?.willSwipe?()
     }
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        // 有加速度时, Did End Swipe 时机
+        // Time to DidEndSwipe when there is a Decelerating
         print("swipeVC: SwipeDidEndWithDecelerating")
         currentSwipeIndex = Int(scrollView.contentOffset.x / scrollView.frame.width)
     }
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         if !decelerate {
-            // 无加速度时, Did End Swipe 时机
+            // Time to DidEndSwipe when there is no Decelerating
             // 缓慢拖动无加速度时不会触发 scrollViewDidEndDecelerating 方法，需要用这个方法互相补充
             print("swipeVC: SwipeDidEndWithOutDecelerating")
             currentSwipeIndex = Int(scrollView.contentOffset.x / scrollView.frame.width)

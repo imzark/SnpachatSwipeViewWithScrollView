@@ -11,9 +11,9 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var mainSwipeViewController = SwipeViewController()     // 翻页控制器
-    var swipeItemViewControllers = [UIViewController]()     // 翻页里面的子控制器, 中间的 hide
-    var midViewController: UIViewController!                // 实际的中间的子控制器
+    var mainSwipeViewController = SwipeViewController()
+    var swipeItemViewControllers = [UIViewController]() // left, mid, right. the mid's view is hidden
+    var midViewController: UIViewController!            // the real midView actually
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,8 +39,7 @@ class ViewController: UIViewController {
         left.view.backgroundColor = #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1)
         left.view.setViewTopRaidus(radius: 12)
         left.view.setViewShadow()
-        
-        // 在 left 中嵌套一个 table 试试
+        // try add tabel view in the left
         let leftTableVC = UITableViewController()
         left.addChild(leftTableVC)
         leftTableVC.view.frame = CGRect(x: 100, y: 100,
@@ -70,8 +69,6 @@ class ViewController: UIViewController {
                                                     height: view.bounds.height - 128)
         view.addSubview(mainSwipeViewController.view)
         mainSwipeViewController.didMove(toParent: self)
-//        print(mainSwipeViewController.view.clipsToBounds)
-//        print(mainSwipeViewController.scrollView.clipsToBounds)
     }
     
     func setupBtns() {
@@ -121,7 +118,10 @@ extension ViewController: SwipeViewControllerDataSource, SwipeViewControllerDele
     
     func swiping(fromIndex: Int, toIndex: Int, progress: Double) {
 //        print("Swiping from \(fromIndex) To \(toIndex), progress: \(progress*100)%")
+        
+        // change midView's alpha & hidden
         var midViewAlpha: CGFloat = 0
+        
         switch (fromIndex, toIndex) {
         case (0, 1), (2, 1):
             midViewAlpha = CGFloat(progress)
@@ -130,6 +130,7 @@ extension ViewController: SwipeViewControllerDataSource, SwipeViewControllerDele
         default:
             break
         }
+        
         midViewController.view.alpha = midViewAlpha
         if midViewAlpha == 0 {
             if !midViewController.view.isHidden {
@@ -137,7 +138,6 @@ extension ViewController: SwipeViewControllerDataSource, SwipeViewControllerDele
                 midViewController.view.isHidden = true
             }
         } else {
-            
             if midViewController.view.isHidden {
                 midViewController.view.isHidden = false
                 print("MainViewController: Show midView)")
