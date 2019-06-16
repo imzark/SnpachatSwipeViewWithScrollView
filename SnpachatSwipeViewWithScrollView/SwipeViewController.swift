@@ -8,21 +8,20 @@
 
 import UIKit
 
-protocol SwipeViewControllerDataSource {
+protocol SwipeViewControllerDataSource: AnyObject {
     func swipeItemViewControllers(in swipeViewController: SwipeViewController) -> [UIViewController]
     func startingIndex(in swipeViewController: SwipeViewController) -> Int
 }
 
-@objc protocol SwipeViewControllerDelegate {
+@objc protocol SwipeViewControllerDelegate: AnyObject {
     @objc optional func willSwipe()
     @objc optional func didSwipeToIndexOfChildViewControllers(_ index: Int)
     @objc optional func swiping(fromIndex: Int, toIndex: Int, progress: Double)
 }
 
 class SwipeViewController: UIViewController {
-    // protocol 不继承 class 时默认是值类型吗？Cannot set weak here
-    var dataSource: SwipeViewControllerDataSource?
-    var delegate: SwipeViewControllerDelegate?
+    weak var dataSource: SwipeViewControllerDataSource?
+    weak var delegate: SwipeViewControllerDelegate?
     
     // childControllers
     private(set) var swipeItemViewControllers = [UIViewController]()
