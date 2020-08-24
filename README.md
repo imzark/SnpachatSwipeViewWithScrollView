@@ -6,6 +6,8 @@ Imitated the navigation design of Snapchat. The thought is that the views (left,
 
 I used UIPageViewContrller. It is much simpler But it cannot eliminate the side effect of bbbounnnceees.
 
-It is a practice. Take it as need. Swift 5 required.
+It is a practice. 
+
+Swift 5 required.
 
 ![](snapchatLikeSwipe.gif)
